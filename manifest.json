@@ -1,0 +1,36 @@
+{
+  "id": "com.stremlist.ur152546841",
+  "version": "1.2.1",
+  "name": "Stremlist (Fixed)",
+  "description": "Your IMDb Watchlist for user ur152546841. Fixed version with idPrefixes.",
+  "resources": ["catalog", "meta"],
+  "types": ["movie", "series"],
+  "idPrefixes": ["tt"],
+  "catalogs": [
+    {
+      "id": "stremlist-movies-ur152546841",
+      "name": "Stremlist Movies",
+      "type": "movie"
+    },
+    {
+      "id": "stremlist-series-ur152546841",
+      "name": "Stremlist Series",
+      "type": "series"
+    }
+  ],
+  "logo": "https://stremlist.com/icon.png",
+  "behaviorHints": {
+    "configurable": true,
+    "configurationRequired": false
+  },
+  "config": [
+    {
+      "key": "sortOption",
+      "type": "select",
+      "title": "Sort Watchlist By",
+      "options": ["added_at-asc", "added_at-desc", "title-asc", "title-desc", "year-desc", "year-asc", "rating-desc", "rating-asc"],
+      "default": "added_at-asc"
+    }
+  ],
+  "selfUrl": "https://kuwima.github.io/stremlist-fixed/manifest.json"
+}
